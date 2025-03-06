@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Highlight : MonoBehaviour
 {
-    public Color highlightEmission = Color.white * 2f;
+    public Color highlightEmission = Color.white * 2f; // Color when cube is free
+    public Color occupiedHighlightEmission = Color.red * 2f; // Color when cube is occupied by prefab
     private GameObject lastHoveredCube;
     private Material lastMaterial;
     private Color originalEmission;
@@ -44,10 +45,23 @@ public class Highlight : MonoBehaviour
             }
 
             // Apply highlight
-            if (hasEmission)
+            if (hoveredCube.transform.childCount > 0) // Cube has prefab on it
             {
-                cubeMaterial.EnableKeyword("_EMISSION");
-                cubeMaterial.SetColor("_EmissionColor", highlightEmission);
+                // Use different color for occupied cubes
+                if (hasEmission)
+                {
+                    cubeMaterial.EnableKeyword("_EMISSION");
+                    cubeMaterial.SetColor("_EmissionColor", occupiedHighlightEmission);
+                }
+            }
+            else
+            {
+                // Use default highlight color for empty cubes
+                if (hasEmission)
+                {
+                    cubeMaterial.EnableKeyword("_EMISSION");
+                    cubeMaterial.SetColor("_EmissionColor", highlightEmission);
+                }
             }
 
             lastMaterial = cubeMaterial;
