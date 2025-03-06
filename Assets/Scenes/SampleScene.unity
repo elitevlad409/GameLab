@@ -2293,6 +2293,7 @@ MonoBehaviour:
   - {fileID: 1298251088794840853, guid: 30d096d3b8956a7408e9d50749abd6e2, type: 3}
   - {fileID: 828030449532098317, guid: 08d1f7c4ded5ec043967649cf5e185ee, type: 3}
   - {fileID: 3248819044630329465, guid: ff4803086eb1cf548b5725885cc3dc7e, type: 3}
+  - {fileID: 680063019906438536, guid: 711b2bde53baa7e4686b7c8c522976b0, type: 3}
   objectToPlace: {fileID: 1298251088794840853, guid: 30d096d3b8956a7408e9d50749abd6e2, type: 3}
 --- !u!1 &336802346
 GameObject:
@@ -6030,8 +6031,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -828, y: 26.4997}
-  m_SizeDelta: {x: -1812.4, y: -949.3398}
+  m_AnchoredPosition: {x: -852.5454, y: 17.7383}
+  m_SizeDelta: {x: -1848.0957, y: -948.925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &919526610
 MonoBehaviour:
@@ -6087,10 +6088,12 @@ MonoBehaviour:
   - {fileID: 1298251088794840853, guid: 30d096d3b8956a7408e9d50749abd6e2, type: 3}
   - {fileID: 828030449532098317, guid: 08d1f7c4ded5ec043967649cf5e185ee, type: 3}
   - {fileID: 3248819044630329465, guid: ff4803086eb1cf548b5725885cc3dc7e, type: 3}
+  - {fileID: 680063019906438536, guid: 711b2bde53baa7e4686b7c8c522976b0, type: 3}
   prefabTextures:
   - {fileID: 2800000, guid: aade1416ca3099d4faca2040e1eaeb27, type: 3}
   - {fileID: 2800000, guid: 4ffd83e892e2e664aa7a45090bb515ba, type: 3}
   - {fileID: 2800000, guid: 711d6652a599dcb43aa42ffbf1af73c2, type: 3}
+  - {fileID: 2800000, guid: 9741c486cb131884197656a8749ae21c, type: 3}
   placeDeleteScript: {fileID: 330585549}
   nextButton: {fileID: 1892306221}
   previousButton: {fileID: 280305221}
