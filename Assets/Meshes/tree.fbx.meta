@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: b49f1980989d30a4a8b10d04bcd08e24
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298245
+  packageName: 3D Game My Little World
+  packageVersion: 1.0.0
+  assetPath: Assets/3D Game My Little World/Meshes/tree.fbx
+  uploadId: 697745
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -21,8 +28,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -75,8 +80,8 @@ ModelImporter:
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 180
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
@@ -112,10 +117,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 298245
-  packageName: 3D Game My Little World
-  packageVersion: 1.0.0
-  assetPath: Assets/3D Game My Little World/Meshes/tree.fbx
-  uploadId: 697745
