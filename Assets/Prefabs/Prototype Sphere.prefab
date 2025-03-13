@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1557018601192403114}
   - component: {fileID: 6141842690857796676}
   - component: {fileID: 2781781249231225303}
+  - component: {fileID: -639761169658444427}
   m_Layer: 3
   m_Name: Prototype Sphere
   m_TagString: Untagged
@@ -66,7 +67,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f09a8ca7a48153b439945db9a016d3f5, type: 2}
-  - {fileID: 2100000, guid: 53b7eae549713ff4ab6598669ce09468, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,3 +109,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-639761169658444427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828030449532098317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 5.76
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
