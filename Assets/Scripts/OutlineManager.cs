@@ -51,6 +51,7 @@ public class OutlineManager : MonoBehaviour
         // Apply the current thickness and color to a single outline
         outline.OutlineWidth = thicknessSlider.value;
         outline.OutlineColor = fcp.color;
+        fcp.startingColor = outline.OutlineColor;
     }
 
     void UpdateOutlineThickness(float value)
