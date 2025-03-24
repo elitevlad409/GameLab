@@ -43,7 +43,8 @@ public class placeDelete : MonoBehaviour
                     Quaternion gridRotation = gridRotator.transform.rotation;
                     GameObject newObj = Instantiate(objectToPlace, placementPosition, gridRotation);
 
-                    // Parent to root cube and mark occupied cubes
+                    // Parent to root cube only and mark occupied cubes
+                    newObj.transform.SetParent(rootCube.transform, true);
                     for (int x = 0; x < size.x; x++)
                     {
                         for (int y = 0; y < size.y; y++)
@@ -52,7 +53,6 @@ public class placeDelete : MonoBehaviour
                             GameObject cube = gridManager.GetCubeAtGridPosition(gridPos);
                             if (cube != null)
                             {
-                                newObj.transform.SetParent(cube.transform, true);
                                 cube.tag = "OccupiedCube";
                             }
                         }
@@ -74,7 +74,10 @@ public class placeDelete : MonoBehaviour
                 Vector2Int checkPos = rootPos + new Vector2Int(x, y);
                 GameObject cube = gridManager.GetCubeAtGridPosition(checkPos);
                 if (cube == null || cube.transform.childCount > 0)
+                {
+                    // Debug.Log($"Cannot place at {checkPos}: Cube={cube?.name}, ChildCount={cube?.transform.childCount}, Tag={cube?.tag}");
                     return false;
+                }
             }
         }
         return true;
@@ -97,7 +100,10 @@ public class placeDelete : MonoBehaviour
                     Vector2Int size = prefabSize != null ? prefabSize.size : new Vector2Int(1, 1);
                     Vector2Int rootPos = gridManager.GetGridPosition(cube);
 
-                    // Clear all occupied cubes
+                    // Destroy the object once from the root cube
+                    Destroy(objToRemove);
+
+                    // Reset all occupied cubes
                     for (int x = 0; x < size.x; x++)
                     {
                         for (int y = 0; y < size.y; y++)
@@ -106,12 +112,7 @@ public class placeDelete : MonoBehaviour
                             GameObject occupiedCube = gridManager.GetCubeAtGridPosition(gridPos);
                             if (occupiedCube != null)
                             {
-                                // Destroy all children and reset state
-                                while (occupiedCube.transform.childCount > 0)
-                                {
-                                    Destroy(occupiedCube.transform.GetChild(0).gameObject);
-                                }
-                                occupiedCube.tag = "Cube"; // Reset tag to default
+                                occupiedCube.tag = "Cube"; // Reset tag
                             }
                         }
                     }
