@@ -2332,10 +2332,17 @@ MonoBehaviour:
   - {fileID: 1298251088794840853, guid: 30d096d3b8956a7408e9d50749abd6e2, type: 3}
   - {fileID: 828030449532098317, guid: 08d1f7c4ded5ec043967649cf5e185ee, type: 3}
   - {fileID: 3248819044630329465, guid: ff4803086eb1cf548b5725885cc3dc7e, type: 3}
+  - {fileID: 3068033616556979734, guid: fc5678b66da64a6469d0cba4e72c67ef, type: 3}
+  - {fileID: 4130348981583078086, guid: ab8caf89f2443b248a6c3230fcb2e055, type: 3}
+  - {fileID: 6984398894280058279, guid: 1669706a6d8ff8949b3d39e7f9e57463, type: 3}
+  - {fileID: 7678671305268066111, guid: d341ed6218428144a961edc76c4c05eb, type: 3}
   - {fileID: 680063019906438536, guid: 711b2bde53baa7e4686b7c8c522976b0, type: 3}
-  - {fileID: 7151456428383602893, guid: 034690e54819bba45b2cd7f8cbf318cf, type: 3}
+  - {fileID: 5528308059460479587, guid: 7bd3a246b53ce184594c5bd950cf22cd, type: 3}
   - {fileID: 3822660147397290626, guid: e34ca4773a43cb74496a0ca4c0e5d193, type: 3}
-  - {fileID: 5543034587600317474, guid: b6e4854b487740244af18171f596909f, type: 3}
+  - {fileID: 7151456428383602893, guid: 034690e54819bba45b2cd7f8cbf318cf, type: 3}
+  - {fileID: 6315866258636445637, guid: 0ca1023c46e30cb49ad9982dc6aaae61, type: 3}
+  - {fileID: 7020217132895439914, guid: 5d0c50bb8ba87a84fad0ad896e679051, type: 3}
+  - {fileID: 1416846531490114835, guid: acfadd1acf802bc44a9d3fc3a6f9fa4d, type: 3}
   objectToPlace: {fileID: 1298251088794840853, guid: 30d096d3b8956a7408e9d50749abd6e2, type: 3}
   gridManager: {fileID: 1607661630}
   cubeLayer:
@@ -3179,7 +3186,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6795,18 +6802,32 @@ MonoBehaviour:
   - {fileID: 1298251088794840853, guid: 30d096d3b8956a7408e9d50749abd6e2, type: 3}
   - {fileID: 828030449532098317, guid: 08d1f7c4ded5ec043967649cf5e185ee, type: 3}
   - {fileID: 3248819044630329465, guid: ff4803086eb1cf548b5725885cc3dc7e, type: 3}
+  - {fileID: 3068033616556979734, guid: fc5678b66da64a6469d0cba4e72c67ef, type: 3}
+  - {fileID: 4130348981583078086, guid: ab8caf89f2443b248a6c3230fcb2e055, type: 3}
+  - {fileID: 6984398894280058279, guid: 1669706a6d8ff8949b3d39e7f9e57463, type: 3}
+  - {fileID: 7678671305268066111, guid: d341ed6218428144a961edc76c4c05eb, type: 3}
   - {fileID: 680063019906438536, guid: 711b2bde53baa7e4686b7c8c522976b0, type: 3}
-  - {fileID: 7151456428383602893, guid: 034690e54819bba45b2cd7f8cbf318cf, type: 3}
+  - {fileID: 5528308059460479587, guid: 7bd3a246b53ce184594c5bd950cf22cd, type: 3}
   - {fileID: 3822660147397290626, guid: e34ca4773a43cb74496a0ca4c0e5d193, type: 3}
-  - {fileID: 5543034587600317474, guid: b6e4854b487740244af18171f596909f, type: 3}
+  - {fileID: 7151456428383602893, guid: 034690e54819bba45b2cd7f8cbf318cf, type: 3}
+  - {fileID: 6315866258636445637, guid: 0ca1023c46e30cb49ad9982dc6aaae61, type: 3}
+  - {fileID: 7020217132895439914, guid: 5d0c50bb8ba87a84fad0ad896e679051, type: 3}
+  - {fileID: 1416846531490114835, guid: acfadd1acf802bc44a9d3fc3a6f9fa4d, type: 3}
   prefabTextures:
   - {fileID: 2800000, guid: aade1416ca3099d4faca2040e1eaeb27, type: 3}
   - {fileID: 2800000, guid: 4ffd83e892e2e664aa7a45090bb515ba, type: 3}
   - {fileID: 2800000, guid: 711d6652a599dcb43aa42ffbf1af73c2, type: 3}
+  - {fileID: 2800000, guid: c3472ea8558ef5f4689135cf946e5dea, type: 3}
+  - {fileID: 2800000, guid: 7a8c4009eb145ba42bdad884a36915e8, type: 3}
+  - {fileID: 2800000, guid: b135fb749fd638c44ad466fe5b126bb8, type: 3}
+  - {fileID: 2800000, guid: bd4c9b480e2bd2442a64d4cacf795b74, type: 3}
   - {fileID: 2800000, guid: 9741c486cb131884197656a8749ae21c, type: 3}
+  - {fileID: 2800000, guid: b247aa24eecd03f47ad7bb911a4c7050, type: 3}
+  - {fileID: 2800000, guid: 265b71425ff29ea41b45e834e36ed864, type: 3}
   - {fileID: 2800000, guid: e7b690be46369294e82969fd0d6767b6, type: 3}
-  - {fileID: 2800000, guid: fa76cb3a3111db54dac499ffe1357463, type: 3}
-  - {fileID: 2800000, guid: 262f6e445d53c6e4aaf44dfc4375dec9, type: 3}
+  - {fileID: 2800000, guid: 4e525790933939240ac8bda8fbe6d058, type: 3}
+  - {fileID: 2800000, guid: 2b7d1571b1c406b4b90a0378f86f5939, type: 3}
+  - {fileID: 2800000, guid: 7f944819591cf864099cbb8448a099d5, type: 3}
   placeDeleteScript: {fileID: 330585549}
   previewer: {fileID: 276133574}
   nextButton: {fileID: 1892306221}

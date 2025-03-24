@@ -17,7 +17,7 @@ public class PrefabPreviewer : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        bool isHoveringOverCube = Physics.Raycast(ray, out hit, Mathf.Infinity, cubeLayer) && 
+        bool isHoveringOverCube = Physics.Raycast(ray, out hit, Mathf.Infinity, cubeLayer) &&
                                  hit.collider.gameObject.CompareTag("Cube");
 
         if (isHoveringOverCube)
@@ -33,6 +33,7 @@ public class PrefabPreviewer : MonoBehaviour
             {
                 Vector3 placementPosition = placeDeleteScript.CalculatePlacementPosition(rootPos, size);
                 previewInstance.transform.position = placementPosition;
+                previewInstance.transform.rotation = placeDeleteScript.gridRotator.transform.rotation;
                 previewInstance.SetActive(true);
             }
             else
@@ -50,7 +51,7 @@ public class PrefabPreviewer : MonoBehaviour
     {
         if (previewInstance != null) Destroy(previewInstance);
         GameObject prefabToPreview = placeDeleteScript.objectToPlace;
-        previewInstance = Instantiate(prefabToPreview, Vector3.zero, Quaternion.identity);
+        previewInstance = Instantiate(prefabToPreview, Vector3.zero, placeDeleteScript.gridRotator.transform.rotation);
         previewMaterial = previewInstance.GetComponent<Renderer>().material;
         Color previewColor = previewMaterial.color;
         previewColor.a = previewTransparency;
