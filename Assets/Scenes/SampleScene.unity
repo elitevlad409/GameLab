@@ -1741,6 +1741,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placeDeleteScript: {fileID: 330585549}
   previewTransparency: 0.7
+  cubeLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!4 &276133575
 Transform:
   m_ObjectHideFlags: 0
@@ -2331,8 +2334,13 @@ MonoBehaviour:
   - {fileID: 3248819044630329465, guid: ff4803086eb1cf548b5725885cc3dc7e, type: 3}
   - {fileID: 680063019906438536, guid: 711b2bde53baa7e4686b7c8c522976b0, type: 3}
   - {fileID: 7151456428383602893, guid: 034690e54819bba45b2cd7f8cbf318cf, type: 3}
-  - {fileID: 0}
+  - {fileID: 3822660147397290626, guid: e34ca4773a43cb74496a0ca4c0e5d193, type: 3}
+  - {fileID: 5543034587600317474, guid: b6e4854b487740244af18171f596909f, type: 3}
   objectToPlace: {fileID: 1298251088794840853, guid: 30d096d3b8956a7408e9d50749abd6e2, type: 3}
+  gridManager: {fileID: 1607661630}
+  cubeLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &333096963
 GameObject:
   m_ObjectHideFlags: 0
@@ -6790,6 +6798,7 @@ MonoBehaviour:
   - {fileID: 680063019906438536, guid: 711b2bde53baa7e4686b7c8c522976b0, type: 3}
   - {fileID: 7151456428383602893, guid: 034690e54819bba45b2cd7f8cbf318cf, type: 3}
   - {fileID: 3822660147397290626, guid: e34ca4773a43cb74496a0ca4c0e5d193, type: 3}
+  - {fileID: 5543034587600317474, guid: b6e4854b487740244af18171f596909f, type: 3}
   prefabTextures:
   - {fileID: 2800000, guid: aade1416ca3099d4faca2040e1eaeb27, type: 3}
   - {fileID: 2800000, guid: 4ffd83e892e2e664aa7a45090bb515ba, type: 3}
@@ -6797,7 +6806,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 9741c486cb131884197656a8749ae21c, type: 3}
   - {fileID: 2800000, guid: e7b690be46369294e82969fd0d6767b6, type: 3}
   - {fileID: 2800000, guid: fa76cb3a3111db54dac499ffe1357463, type: 3}
+  - {fileID: 2800000, guid: 262f6e445d53c6e4aaf44dfc4375dec9, type: 3}
   placeDeleteScript: {fileID: 330585549}
+  previewer: {fileID: 276133574}
   nextButton: {fileID: 1892306221}
   previousButton: {fileID: 280305221}
   prefabTextureDisplay: {fileID: 598115601}
@@ -6864,7 +6875,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931833668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6873,7 +6884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0050049, y: 0.002533}
+  m_AnchoredPosition: {x: 0.005004883, y: 0.0025634766}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &938592555
@@ -11198,6 +11209,51 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 836509955}
   m_SourcePrefab: {fileID: 100100000, guid: 4214b57e615806c448ba9d993d629531, type: 3}
+--- !u!1 &1607661628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607661629}
+  - component: {fileID: 1607661630}
+  m_Layer: 0
+  m_Name: GridManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1607661629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607661628}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.3916028, y: -2.4462996, z: 0.27304503}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607661630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607661628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c72ff6910383f2479bace85d4813bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSpacing: 0.98
 --- !u!1 &1659747817
 GameObject:
   m_ObjectHideFlags: 0
@@ -14596,3 +14652,4 @@ SceneRoots:
   - {fileID: 276133575}
   - {fileID: 1688065166}
   - {fileID: 333096965}
+  - {fileID: 1607661629}

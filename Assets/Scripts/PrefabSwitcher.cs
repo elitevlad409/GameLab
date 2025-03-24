@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; // Add this for RawImage, Button, etc.
 
 public class PrefabSwitcher : MonoBehaviour
 {
@@ -7,6 +7,7 @@ public class PrefabSwitcher : MonoBehaviour
     public Texture[] prefabTextures;
     private int currentPrefabIndex = 0;
     public placeDelete placeDeleteScript;
+    public PrefabPreviewer previewer; // Reference to PrefabPreviewer
     public Button nextButton;
     public Button previousButton;
     public RawImage prefabTextureDisplay;
@@ -15,6 +16,7 @@ public class PrefabSwitcher : MonoBehaviour
     {
         placeDeleteScript.objectToPlace = prefabs[currentPrefabIndex];
         UpdatePrefabTexture();
+        previewer.UpdatePreviewPrefab(); // Update preview on start
         nextButton.onClick.AddListener(SwitchToNextPrefab);
         previousButton.onClick.AddListener(SwitchToPreviousPrefab);
     }
@@ -24,6 +26,7 @@ public class PrefabSwitcher : MonoBehaviour
         currentPrefabIndex = (currentPrefabIndex + 1) % prefabs.Length;
         placeDeleteScript.objectToPlace = prefabs[currentPrefabIndex];
         UpdatePrefabTexture();
+        previewer.UpdatePreviewPrefab(); // Update preview when switching
     }
 
     void SwitchToPreviousPrefab()
@@ -31,6 +34,7 @@ public class PrefabSwitcher : MonoBehaviour
         currentPrefabIndex = (currentPrefabIndex - 1 + prefabs.Length) % prefabs.Length;
         placeDeleteScript.objectToPlace = prefabs[currentPrefabIndex];
         UpdatePrefabTexture();
+        previewer.UpdatePreviewPrefab(); // Update preview when switching
     }
 
     void UpdatePrefabTexture()
